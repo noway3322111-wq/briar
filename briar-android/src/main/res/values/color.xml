@@ -44,14 +44,29 @@
 	<color name="briar_gray_200_new">#E5E7EB</color>
 	<color name="briar_gray_100">#f2f2f2</color>
 
+	<!--
+	LG Messages (4.40.39, LG D415 / Android 4.4) look.
+	These values are approximations of that app's palette. They are all
+	collected here so they can be tuned in one place.
+	-->
+	<color name="lg_bar_background">#3F3F3F</color>
+	<color name="lg_window_background">#FFFFFF</color>
+	<color name="lg_bubble_in">#E8E8E8</color>
+	<color name="lg_bubble_out">#C9E6F5</color>
+	<color name="lg_text_primary">#333333</color>
+	<color name="lg_text_secondary">#7A7A7A</color>
+	<color name="lg_accent">#2B9BD1</color>
+	<color name="lg_divider">#D9D9D9</color>
+	<color name="lg_compose_bar">#F2F2F2</color>
+
 	<color name="briar_brand_blue">@color/briar_night_700</color>
 	<color name="briar_brand_green">@color/briar_lime_400</color>
 
-	<color name="briar_primary">@color/briar_brand_blue</color>
+	<color name="briar_primary">@color/lg_bar_background</color>
 	<color name="briar_primary_dark">@color/briar_night_950</color>
-	<color name="briar_accent">@color/briar_brand_blue</color>
+	<color name="briar_accent">@color/lg_accent</color>
 
-	<color name="window_background">@color/briar_gray_100</color>
+	<color name="window_background">@color/lg_window_background</color>
 	<color name="card_background">@color/cardview_light_background</color>
 	<color name="item_background_highlight">@color/briar_gray_200</color>
 	<color name="briar_warning_background">@color/briar_red_500</color>
@@ -61,13 +76,19 @@
 
 	<color name="color_primary">#dd000000</color>
 
-	<color name="msg_in">@android:color/white</color>
-	<color name="msg_out">@color/briar_blue_400</color>
-	<color name="notice_in">@color/briar_night_50</color>
-	<color name="notice_out">@color/briar_blue_600</color>
-	<color name="msg_stroke_light">@color/briar_gray_300</color>
+	<color name="msg_in">@color/lg_bubble_in</color>
+	<color name="msg_out">@color/lg_bubble_out</color>
+	<color name="notice_in">@color/lg_bubble_in</color>
+	<color name="notice_out">@color/lg_bubble_out</color>
+	<!-- LG bubbles are flat, so the stroke matches the fill -->
+	<color name="msg_stroke_light">@color/lg_bubble_in</color>
 	<color name="msg_stroke_dark">@color/briar_gray_900</color>
 	<color name="msg_stroke">@color/msg_stroke_light</color>
+	<color name="msg_out_stroke">@color/lg_bubble_out</color>
+	<!-- text on sent bubbles: dark on the light LG bubble -->
+	<color name="msg_out_text">@color/lg_text_primary</color>
+	<color name="msg_out_text_link">@color/lg_accent</color>
+	<color name="msg_out_time">@color/lg_text_secondary</color>
 	<color name="msg_status_bubble_background">#66000000</color>
 	<color name="msg_status_bubble_foreground">@android:color/white</color>
 	<color name="msg_selected_background">@color/briar_accent</color>
@@ -97,7 +118,7 @@
 	<color name="thread_item_background">@color/window_background</color>
 	<color name="thread_item_highlight">@android:color/white</color>
 
-	<color name="divider">@color/briar_gray_200</color>
+	<color name="divider">@color/lg_divider</color>
 
 
 

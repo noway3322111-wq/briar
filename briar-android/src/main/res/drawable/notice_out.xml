@@ -16,5 +16,5 @@
 		android:color="@color/notice_out"/>
 	<stroke
 		android:width="@dimen/message_bubble_stroke"
-		android:color="@color/msg_stroke_dark"/>
+		android:color="@color/msg_out_stroke"/>
 </shape>

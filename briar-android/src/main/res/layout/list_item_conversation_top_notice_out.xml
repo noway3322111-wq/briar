@@ -14,7 +14,7 @@
 	android:background="@drawable/notice_out"
 	android:elevation="@dimen/message_bubble_elevation"
 	android:paddingBottom="@dimen/message_bubble_padding_top"
-	android:textColor="@color/private_message_date_inverse"
+	android:textColor="@color/msg_out_time"
 	android:textIsSelectable="false"
 	android:visibility="gone"
 	tools:showIn="@layout/list_item_conversation_msg_out"

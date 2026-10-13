@@ -48,8 +48,8 @@
 			android:layout_marginTop="@dimen/message_bubble_padding_top_inner"
 			android:layout_marginRight="@dimen/message_bubble_padding_sides_inner"
 			android:layout_marginBottom="@dimen/message_bubble_padding_bottom_inner"
-			android:textColor="@color/briar_text_primary_inverse"
-			android:textColorLink="@color/briar_text_link_inverse"
+			android:textColor="@color/msg_out_text"
+			android:textColorLink="@color/msg_out_text_link"
 			app:layout_constrainedWidth="true"
 			app:layout_constraintBottom_toTopOf="@+id/statusLayout"
 			app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +80,7 @@
 				android:layout_height="wrap_content"
 				android:layout_marginEnd="4dp"
 				android:layout_marginRight="4dp"
-				android:textColor="@color/private_message_date_inverse"
+				android:textColor="@color/msg_out_time"
 				tools:text="Dec 24, 13:37" />
 
 			<ImageView
@@ -90,14 +90,14 @@
 				android:layout_marginEnd="4dp"
 				android:layout_marginRight="4dp"
 				app:srcCompat="@drawable/ic_bomb"
-				app:tint="@color/private_message_date_inverse"
+				app:tint="@color/msg_out_time"
 				tools:ignore="ContentDescription" />
 
 			<ImageView
 				android:id="@+id/status"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				app:tint="@color/private_message_date_inverse"
+				app:tint="@color/msg_out_time"
 				tools:ignore="ContentDescription"
 				tools:src="@drawable/message_delivered" />
 
